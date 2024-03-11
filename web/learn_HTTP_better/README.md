@@ -1,4 +1,4 @@
-# learn HTTP
+# learn HTTP better
 ## Solution
 We can produce any HTTP response, just url-encode it and pass to the input to get the url to produce your HTTP response.
 
