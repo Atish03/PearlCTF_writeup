@@ -27,7 +27,7 @@ Disallow: /gr34t_/page.php
 
 we get the followinf code at `/gr34t_/page.php` endpoint
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,10 +69,10 @@ curl -H "referer: localhost" -H "user-agent: B3gul4" https://steps-to-success.ct
 
 this will tell us to head to `/u_c4nt_gu355_th1s`, we find that GET method is not allowed at this endpoint, on making a POST request we get JSON decode error, after seeing the source, we find that there are two snippets that were obfuscated, we just need to run the `main.js` with node and print the snippets.
 
-```
+```js
 (o,e)=>{let f=Object.keys(e);for(key of f)void 0!=o[key]&&isObject(o[key])&&isObject(e[key])?func1(o[key],e[key]):o[key]=e[key]};
 ```
-```
+```js
 const userObj=JSON.parse(req.body.obj);let template={user:1,role:"staff",access:{server:"none",database:"partial"},organisation:"pearl.in"};Object.setPrototypeOf(template,{}),userObj.isAdmin?result="You cannot do that here!":(func1(template,userObj),template.isAdmin&&(result=FLAG));
 ```
 
