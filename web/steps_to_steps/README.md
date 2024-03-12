@@ -61,7 +61,7 @@ we get the followinf code at `/gr34t_/page.php` endpoint
 </html>
 ```
 
-We can see that our input is validated against a password, later the md5 of our input is validated against the md5 of `PearlCTF_15345384`, we can bypass the password check since `extract` is used to create a variable with our input as value, we can overwrite the password variable if we also pass password in get parameters. The md5 bypass is `php typejuggling`.
+We can see that our input is validated against a password, later the md5 of our input is validated against the md5 of `PearlCTF_15345384`, we can bypass the password check since `extract` is used to create a variable with our input as value, we can overwrite the password variable if we also pass password in get parameters. The md5 bypass is [php typejuggling](https://news.ycombinator.com/item?id=9484757).
 
 ```
 curl -H "referer: localhost" -H "user-agent: B3gul4" https://steps-to-success.ctf.pearlctf.in/gr34t_/page.php\?password\=QNKCDZO\&input\=QNKCDZO
