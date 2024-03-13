@@ -2,7 +2,7 @@
 ## Solution
 following the steps in [rusty proxy again](https://github.com/Atish03/PearlCTF_writeup/tree/main/web/rusty_proxy_again#rusty-proxy-again), we find a `reward` function.
 
-![reward function](reward.png)
+![reward function](imgs/reward.png)
 
 Analysing the function, we see that the string is xored with its index to give the final flag.
 

